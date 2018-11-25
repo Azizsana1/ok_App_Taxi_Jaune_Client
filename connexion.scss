@@ -1,0 +1,27 @@
+page-connexion {
+    .center1
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .center2
+    {
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+    .center3 
+    {
+        margin-left: 23%;
+        margin-right: 22%;
+    }
+
+    .error
+    {
+        > div { background-color: #E8483A!important; }
+    }
+    img
+    { 
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}

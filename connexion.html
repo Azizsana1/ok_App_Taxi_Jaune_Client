@@ -1,0 +1,22 @@
+<ion-content padding>
+  <img src="{{logo.image}}"> 
+  <h4 class="center1"> CONNEXION </h4>  
+  <ion-list>
+      <!-- <form #f="ngForm" (ngSubmit)="se_connecter(f.value)"> -->
+        <ion-item>
+          <ion-label floating> <ion-icon name="md-calculator" item-left></ion-icon> Numéro tel (email en phase test)</ion-label>
+          <ion-input type="text" [(ngModel)]="user.tel" clearInput="true" autocomplete="true"></ion-input>
+        </ion-item>
+        
+        <ion-item>  
+          <ion-label floating> <ion-icon name="md-lock" item-left></ion-icon> Mot de passe </ion-label>
+          <ion-input type="password" [(ngModel)]="user.password" clearInput="true"></ion-input>
+        </ion-item>
+        <button  ion-button="" round block full color="jaune1" type="Submit" (click)="se_connecter(user)"> Se connecter </button> 
+        <p class="center2">Vous n'avez pas encore de compe ? </p>         
+     <!-- </form> -->
+     <form #f="ngForm" (ngSubmit)="inscrire(f.value)">
+        <button ion-button color="black" clear class="center3" type="Submit" (click)="inscrire()" style="text-transform: none;">Inscrivez-vous gratuitement</button> 
+      </form>
+  </ion-list>  
+</ion-content>
